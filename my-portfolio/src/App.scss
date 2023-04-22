@@ -1,12 +1,17 @@
-// App.scss
-
 .App {
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; // Set the minimum height of the App container to the full viewport height
+}
 
-  main {
-    flex-grow: 1;
-  }
+.content {
+  flex: 1; // This will cause the content to take up all available space, pushing the footer to the bottom
+}
+
+.greeting-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
