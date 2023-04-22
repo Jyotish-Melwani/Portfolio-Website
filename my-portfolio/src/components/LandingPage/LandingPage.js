@@ -4,6 +4,9 @@ import './LandingPage.scss';
 const LandingPage = ({ onEnter, onExit }) => {
   return (
     <div className="landing-page">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       <div className="welcome-container">
         <h1>Welcome to my Portfolio Website</h1>
         <div className="buttons">
