@@ -13,7 +13,7 @@ const Greeting = () => {
       </h2>
       <div className="greeting-buttons">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Jyotish-Melwani"
           target="_blank"
           rel="noopener noreferrer"
           className="github-button"
@@ -21,7 +21,7 @@ const Greeting = () => {
           <img src={githubLogo} alt="GitHub Logo" />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourusername/"
+          href="https://www.linkedin.com/in/jyotishmelwani/"
           target="_blank"
           rel="noopener noreferrer"
           className="linkedin-button"
