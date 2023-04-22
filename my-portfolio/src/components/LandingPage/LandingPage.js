@@ -8,10 +8,11 @@ const LandingPage = ({ onEnter, onExit }) => {
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div className="welcome-container">
-        <h1>Welcome to my Portfolio Website</h1>
+        <h1>Welcome to Jyotish Melwani's Website</h1>
         <div className="buttons">
-          <button onClick={onEnter}>Enter</button>
-          <button onClick={onExit}>Exit</button>
+        <button className="enter" onClick={onEnter}>Enter</button>
+        <button className="exit" onClick={onExit}>Exit</button>
+
         </div>
       </div>
     </div>
