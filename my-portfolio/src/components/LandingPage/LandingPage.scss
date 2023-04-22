@@ -1,0 +1,30 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+  
+    .welcome-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+  
+      h1 {
+        margin-bottom: 1rem;
+      }
+  
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+    }
+  }
+  
