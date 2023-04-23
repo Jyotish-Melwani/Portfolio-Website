@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.scss';
 
-const Header = ({ onClick }) => {
+const Header = () => {
   return (
     <header className="header">
-      <h1 onClick={onClick}>Jyotish Melwani</h1>
+      <h1>JM</h1>
     </header>
   );
 };

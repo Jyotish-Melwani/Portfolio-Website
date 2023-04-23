@@ -1,22 +1,40 @@
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; // Set the minimum height of the App container to the full viewport height
+  min-height: 100vh;
+  background-color: #54595f;
 }
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   flex: 1;
   padding: 2rem;
+  margin-top: 10rem;
 }
 
+.content > .element {
+  width: 100vw;
+  height: 100vh;
+}
 
-.greeting-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav {
+  position: fixed;
+  top: 4rem; // Adjust this value based on the height of the header
+  width: 100%;
+  z-index: 100;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }

@@ -1,32 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Nav.scss';
-import avatar1 from '../../assets/avatar1.avif';
-import avatar2 from '../../assets/avatar2.avif';
-import avatar3 from '../../assets/avatar3.avif';
-import avatar4 from '../../assets/avatar4.avif';
 
-const Nav = ({ onNavigate, isHomepage }) => {
-  const [showAbout, setShowAbout] = useState(false);
-  const [showContact, setShowContact] = useState(false);
+const Nav = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
   return (
-    <nav className={`nav ${isHomepage ? 'centered' : ''}`}>
+    <nav className="nav">
       <ul className="nav-list">
-        <li className="nav-item" onClick={() => { setShowAbout(!showAbout); onNavigate('about'); }}>
-          <img src={avatar1} alt="Avatar 1" />
-          <span>About</span>
+        <li className="nav-item" onClick={scrollToTop}>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
-        <li className="nav-item" onClick={() => onNavigate('projects')}>
-          <img src={avatar2} alt="Avatar 2" />
-          <span>Projects</span>
+        <li className="nav-item">
+          <Link to="expertise" smooth={true} duration={500}>
+            Expertise
+          </Link>
         </li>
-        <li className="nav-item" onClick={() => { setShowContact(!showContact); onNavigate('contact'); }}>
-          <img src={avatar3} alt="Avatar 3" />
-          <span>Contact</span>
+        <li className="nav-item">
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
         </li>
-        <li className="nav-item" onClick={() => onNavigate('resume')}>
-          <img src={avatar4} alt="Avatar 4" />
-          <span>Resume</span>
+        <li className="nav-item">
+          <Link to="experience" smooth={true} duration={500}>
+            Experience
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
